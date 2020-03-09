@@ -8,13 +8,35 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <%-include("partials/navbar")%>
-    <form>
-        <input type="text" placeholder="location" id="licationinput">
-        <button>search</button>
-    </form>
-    <h2>weather today :</h2>
-    <div id="info"></div>
+
+    <div class="container">
+        <div class="trai"></div>
+        <div class="box">
+            <div class="shape">
+                <img class="weather-icon" src="/img/weather2.svg" alt="weather icon">
+
+                <h2 class="header" >Ask about the <span>weather</span>?!</h2>
+                <hr>
+                <p class="inst">
+                        Search for any city you<br> want and know<br> its weather...                        
+                </p>
+            </div>
+            <div class="data">
+                    <form>
+                            <div class="smallcon">
+                                <input type="text" name="location" required id="licationinput">
+                                <label for="location">Location</label>
+                            </div>
+                            <button class="btn">search</button>
+                    </form>
+                    <div id="info">
+
+                    </div>
+                    <img id="lastimg" src="/img/weather.svg" alt="">
+            </div>
+        </div>
+    </div>
+    
     
 
 
